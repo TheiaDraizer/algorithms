@@ -52,10 +52,9 @@ class Main {
         // }
     }
 
-    // Creating a unique array with random integers
+
     Integer[] uniqueArray = (Integer[]) new Randomize.Array1D(4, new Randomize.Integer(1, 9)).create();
 
-    // Constructor
     Main() {
         int a = uniqueArray[0];
         int b = uniqueArray[1];
@@ -68,11 +67,9 @@ class Main {
         Tracer.delay();
         // }
 
-        // Call the bogosort function
         bogosort(new int[]{a, b, c, d});
     }
 
-    // Main method to run the program
     public static void main(String[] args) {
         new Main();
     }
